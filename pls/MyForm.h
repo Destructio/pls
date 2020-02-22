@@ -162,7 +162,7 @@ namespace pls {
 			this->label5->Size = System::Drawing::Size(20, 15);
 			this->label5->TabIndex = 6;
 			this->label5->Text = L"x3";
-			this->label5->Click += gcnew System::EventHandler(this, &MyForm::label5_Click);
+			
 			// 
 			// label6
 			// 
@@ -295,7 +295,6 @@ namespace pls {
 			this->Controls->Add(this->button1);
 			this->Name = L"MyForm";
 			this->Text = L"Вычисление периметра и площади треугольника";
-			this->Load += gcnew System::EventHandler(this, &MyForm::MyForm_Load);
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
@@ -320,7 +319,6 @@ private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e
 	textBox7->Text = p.ToString();
 	textBox8->Text = s.ToString();
 }
-
 
 };
 }
